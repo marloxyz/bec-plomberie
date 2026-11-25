@@ -1,0 +1,3 @@
+# Aperçu sur *.pages.dev : ne pas indexer (le vrai domaine reste indexable)
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
