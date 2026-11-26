@@ -22,7 +22,7 @@ Fiche Google : 5,0 / 5, 23 avis (novembre 2026). Points forts cités dans les av
 - 4 services : Plomberie, Débouchage, Chauffe-eau et cumulus, Climatisation. Liste détaillée des prestations [À CONFIRMER avec le client].
 - Avis : 6 extraits réels de la fiche Google, signés prénom + initiale (Teo D., M. B., Florian G., Sagdana, Léo F., Anis). Ne pas modifier le sens.
 - Ne rien inventer : pas de certifications, pas de prix, pas d'historique, pas de « 24h/24 ».
-- Placeholders à remplacer : email, SIRET, clé Web3Forms, image OG (og-image.jpg 1200×630).
+- Placeholders à remplacer : SIRET, clé Web3Forms.
 
 ## Stack
 HTML + CSS statique (one-page, pas de build), déploiement Cloudflare Pages (dossier racine, pas de commande de build).
@@ -37,10 +37,10 @@ Pas d'iframe Google Maps (cookies) : lien « Itinéraire » vers Google Maps à 
 - Domaine : https://www.bec-plomberie.fr [À CONFIRMER] (à remplacer dans canonical, og:url, sitemap, robots)
 
 ## Style
-Bleu ciel (#1E9BE0) et blanc dominants, touches d'orange (#D9670F) sur les boutons d'appel et les points du logo. Texte en bleu nuit (#12344D) pour la lisibilité. Titres Barlow Condensed (majuscules), texte Barlow. Mobile-first, barre d'appel fixe en bas sur mobile. Thème sombre automatique.
-Logo créé (goutte blanche dans un rond bleu ciel + « B.E.C » / « PLOMBERIE ») : dossier `logo/` (SVG texte vectorisé + PNG ×4, version couleur, version blanche, icône). Favicon = icône.
-Photos : 7 photos de la fiche Google dans `img/` (salle-de-bain, cabine-douche 720×960 ; douche-italienne, chauffe-eau, salle-de-bain-moderne, meuble-vasque, baignoire 600×800). Vérifier avec le client qu'elles sont bien à lui (certaines peuvent venir d'avis clients).
-Hero : éclaboussure d'eau générée par code (img/hero-eau.webp 2560×800 pour ≥700px, img/hero-eau-mobile.webp 1200×1800 pour téléphone), libre de droits. Nom écrit « B.E.C » (sans point final) partout. Boutons : « Devis gratuit » / « Free quote ».
+Couleurs du logo client : bleu nuit (#101D3B) et doré (#C9A66B, doré foncé #7F5F26 pour le texte sur blanc), blanc pour respirer. **Aucun orange.** En-tête et bandeau contact bleu nuit, boutons d'appel dorés à texte bleu nuit. Titres Barlow Condensed (majuscules), texte Barlow, nom de marque en Cinzel. Mobile-first, barre d'appel fixe en bas sur mobile. Thème sombre automatique.
+Logo fourni par le client (robinet doré + écusson « BEC » sur fond bleu nuit) : `logo/logo-bec-plomberie.png` (original recadré), `logo-bec-plomberie-transparent.png`, `logo-bec-embleme.webp/png` (robinet + écusson détourés, utilisés dans l'en-tête avec « B.E.C / Plomberie » en texte), `logo-icone.png` + `apple-touch-icon.png` + `favicon.svg`. Image de partage `og-image.jpg` (1200×630).
+Photos : 7 photos de la fiche Google dans `img/`. Vérifier avec le client qu'elles sont bien à lui.
+Hero : salle de bain design (photo Unsplash M6a_MWnHJd4, licence Unsplash gratuite) : img/hero-salle-de-bain.webp 1800×1200 (≥700px), img/hero-salle-de-bain-mobile.webp 800×1200, voile bleu nuit. Nom écrit « B.E.C » (sans point final) partout. Boutons : « Devis gratuit » / « Free quote ».
 
 ## Règles
 - Textes en français
@@ -52,7 +52,7 @@ Hero : éclaboussure d'eau générée par code (img/hero-eau.webp 2560×800 pour
 ## Checklist de livraison
 - [x] Responsive testé mobile / tablette / desktop (FR + EN, 25/11/2026)
 - [ ] Lighthouse > 90 sur les 4 catégories
-- [ ] Logo validé par le client + image OG
+- [x] Logo du client intégré + image OG
 - [ ] Formulaire fonctionnel (test d'envoi réel)
 - [ ] Mentions légales + politique de confidentialité complétées (SIRET, email, dirigeant)
 - [ ] Page 404
