@@ -40,7 +40,7 @@ Pas d'iframe Google Maps (cookies) : lien « Itinéraire » vers Google Maps à 
 Couleurs du logo client : bleu nuit (#101D3B) et doré (#C9A66B, doré foncé #7F5F26 pour le texte sur blanc), blanc pour respirer. **Aucun orange.** En-tête et bandeau contact bleu nuit, boutons d'appel dorés à texte bleu nuit. Titres Barlow Condensed (majuscules), texte Barlow, nom de marque en Cinzel. Mobile-first, barre d'appel fixe en bas sur mobile. Thème sombre automatique.
 Logo fourni par le client (robinet doré + écusson « BEC » sur fond bleu nuit) : `logo/logo-bec-plomberie.png` (original recadré), `logo-bec-plomberie-transparent.png`, `logo-bec-embleme.webp/png` (robinet + écusson détourés, utilisés dans l'en-tête avec « B.E.C / Plomberie » en texte), `logo-icone.png` + `apple-touch-icon.png` + `favicon.svg`. Image de partage `og-image.jpg` (1200×630).
 Photos : 7 photos de la fiche Google dans `img/`. Vérifier avec le client qu'elles sont bien à lui.
-Hero : salle de bain design (photo Unsplash M6a_MWnHJd4, licence Unsplash gratuite) : img/hero-salle-de-bain.webp 1800×1200 (≥700px), img/hero-salle-de-bain-mobile.webp 800×1200, voile bleu nuit. Nom écrit « B.E.C » (sans point final) partout. Boutons : « Devis gratuit » / « Free quote ».
+Hero : salle de bain sombre et chic, baignoire îlot en pierre sous éclairage chaud (photo Unsplash vlLByisESho de Fidel Fernando, licence Unsplash gratuite, choisie d après la référence envoyée par le client) : img/hero-salle-de-bain.webp 1800×1200 (≥700px), img/hero-salle-de-bain-mobile.webp 800×1200, voile bleu nuit. Nom écrit « B.E.C » (sans point final) partout. Boutons : « Devis gratuit » / « Free quote ».
 
 ## Règles
 - Textes en français
