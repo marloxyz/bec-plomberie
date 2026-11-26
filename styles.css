@@ -154,13 +154,17 @@ body::before {
 
 /* Réalisations */
 .gallery { display: grid; gap: .75rem; grid-template-columns: repeat(2, 1fr); }
-@media (min-width: 700px) { .gallery { grid-template-columns: repeat(4, 1fr); gap: 1rem; } }
+@media (min-width: 600px) { .gallery { grid-template-columns: repeat(5, 1fr); gap: 1rem; } }
 .shot { margin: 0; display: grid; gap: .4rem; align-content: start; min-width: 0; }
 .shot:first-child { grid-column: span 2; }
+@media (min-width: 600px) {
+  .shot:first-child { grid-row: span 2; display: flex; flex-direction: column; }
+  .shot:first-child .shot-btn { position: relative; flex: 1; }
+  .shot:first-child img { position: absolute; inset: 0; height: 100%; }
+}
 .shot-btn { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; border-radius: var(--radius); overflow: hidden; }
 .shot-btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
 .shot img { display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; transition: transform .3s ease; }
-.shot:first-child img { aspect-ratio: 3 / 2; }
 .shot-btn:hover img { transform: scale(1.04); }
 @media (prefers-reduced-motion: reduce) { .shot img { transition: none; } }
 .shot figcaption { font-size: .9rem; color: var(--muted); }
