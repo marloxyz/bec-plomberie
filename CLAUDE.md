@@ -19,7 +19,7 @@ Fiche Google : 5,0 / 5, 23 avis (novembre 2026). Points forts cités dans les av
 - Mentions légales, Politique de confidentialité, 404
 
 ## Contenus
-- 4 services : Plomberie, Débouchage, Chauffe-eau et cumulus, Climatisation. Liste détaillée des prestations [À CONFIRMER avec le client].
+- Prestation mise en avant (carte bleu nuit pleine largeur) : « Installation haut de gamme » de salles de bain (douches à l'italienne, toilettes suspendues, salles de bain complètes). Puis 4 services : Plomberie, Débouchage, Chauffe-eau et cumulus, Climatisation. Liste détaillée des prestations [À CONFIRMER avec le client].
 - Avis : 6 extraits réels de la fiche Google, signés prénom + initiale (Teo D., M. B., Florian G., Sagdana, Léo F., Anis). Ne pas modifier le sens.
 - Ne rien inventer : pas de certifications, pas de prix, pas d'historique, pas de « 24h/24 ».
 - Placeholders à remplacer : SIRET, clé Web3Forms.
@@ -40,7 +40,7 @@ Pas d'iframe Google Maps (cookies) : lien « Itinéraire » vers Google Maps à 
 Couleurs du logo client : bleu nuit (#101D3B) et doré (#C9A66B, doré foncé #7F5F26 pour le texte sur blanc), blanc pour respirer. **Aucun orange.** En-tête et bandeau contact bleu nuit, boutons d'appel dorés à texte bleu nuit. Titres Barlow Condensed (majuscules), texte Barlow, nom de marque en Cinzel. Mobile-first, barre d'appel fixe en bas sur mobile. Thème sombre automatique.
 Logo fourni par le client (robinet doré + écusson « BEC » sur fond bleu nuit) : `logo/logo-bec-plomberie.png` (original recadré), `logo-bec-plomberie-transparent.png`, `logo-bec-embleme.webp/png` (robinet + écusson détourés, utilisés dans l'en-tête avec « B.E.C / Plomberie » en texte), `logo-icone.png` + `apple-touch-icon.png` + `favicon.svg`. Image de partage `og-image.jpg` (1200×630).
 Photos : 7 photos de la fiche Google dans `img/`. Vérifier avec le client qu'elles sont bien à lui.
-Hero : salle de bain sombre et chic, baignoire îlot en pierre sous éclairage chaud (photo Unsplash vlLByisESho de Fidel Fernando, licence Unsplash gratuite, choisie d après la référence envoyée par le client) : img/hero-salle-de-bain.webp 1800×1200 (≥700px), img/hero-salle-de-bain-mobile.webp 800×1200, voile bleu nuit. Nom écrit « B.E.C » (sans point final) partout. Boutons : « Devis gratuit » / « Free quote ».
+Hero plein écran (hauteur de l'écran sur ordinateur et téléphone), sans texte d'intro sous le titre : salle de bain en pierre sombre, baignoire îlot anthracite face à une baie vitrée sur la mer (photo Unsplash iD1GObFLsOs de Rod Long, licence Unsplash gratuite, choisie le 26/11 pour coller à la référence du client) : img/hero-salle-de-bain.webp 1800×1200 (≥700px), img/hero-salle-de-bain-mobile.webp 800×1200, voile bleu nuit. Nom écrit « B.E.C » (sans point final) partout. Boutons : « Devis gratuit » / « Free quote ».
 
 ## Règles
 - Textes en français

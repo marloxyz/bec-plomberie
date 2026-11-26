@@ -133,10 +133,14 @@ body::before {
       url("/img/hero-salle-de-bain.webp");
   }
 }
-.hero-grid { display: grid; padding-block: clamp(3rem, 9vw, 6rem); }
+/* Hero plein écran : hauteur de l'écran moins l'en-tête (et la barre d'appel sur mobile) */
+.hero { display: grid; align-items: center; min-height: calc(100vh - 4rem - 1px - 4.5rem); min-height: calc(100svh - 4rem - 1px - 4.5rem - env(safe-area-inset-bottom, 0px)); }
+@media (min-width: 900px) { .hero { min-height: calc(100vh - 4rem - 1px); min-height: calc(100svh - 4rem - 1px); } }
+.hero-grid { display: grid; padding-block: clamp(2.5rem, 7vw, 5rem); width: 100%; }
 .hero-text { max-width: 40rem; }
 .hero h1 { font-size: clamp(2.6rem, 8vw, 4.6rem); font-weight: 800; text-transform: uppercase; letter-spacing: .005em; color: #fff; }
 .hero h1 span { color: var(--gold-light); display: block; }
+.hero h1 + .hero-actions { margin-top: 2rem; }
 .hero .lead { margin-top: 1rem; max-width: 34rem; color: #e9ecf3; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.75rem; }
 .btn-light { color: #fff; }
@@ -186,6 +190,12 @@ body::before {
   padding: 1.5rem; display: grid; gap: .6rem; align-content: start;
 }
 .service-icon { width: 2.75rem; height: 2.75rem; color: var(--sky); }
+.service-featured { grid-column: 1 / -1; background: var(--navy); color: #fff; border-color: var(--navy); border-top-color: var(--gold); }
+.service-featured .service-icon { color: var(--gold); width: 3.25rem; height: 3.25rem; }
+.service.service-featured p { color: #d6dbe6; }
+.service-featured h3 { font-size: 1.75rem; }
+.service-featured .service-tag { font-family: var(--font-display); font-weight: 600; text-transform: uppercase; letter-spacing: .12em; color: var(--gold-light); margin-bottom: .2rem; }
+@media (min-width: 640px) { .service-featured { grid-template-columns: auto 1fr; gap: 1.25rem; align-items: start; padding: 1.75rem 2rem; } }
 .service p { color: var(--muted); }
 
 /* Atouts */
