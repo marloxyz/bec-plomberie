@@ -8,7 +8,7 @@ Fiche Google : 5,0 / 5, 23 avis (novembre 2026). Points forts cités dans les av
 ## Coordonnées
 - Tél : 07 49 65 68 85 (+33749656885)
 - Adresse : 83 avenue de la Bermone, 06270 Villeneuve-Loubet
-- Email : [À FOURNIR]
+- Email : mubeneshacedric@gmail.com (reçoit aussi les demandes du formulaire)
 - Horaires : lundi au samedi 07:30–20:00, dimanche 09:00–17:00
 - Réseaux : [À CONFIRMER]
 - SIRET / forme juridique / nom du dirigeant : [À FOURNIR]

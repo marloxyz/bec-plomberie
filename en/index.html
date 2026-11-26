@@ -285,7 +285,7 @@
         <p class="lead" style="margin-top:.75rem">Calling is the quickest way. You can also leave a message using the form and I will get back to you. I speak French; English is fine for a short message.</p>
         <p style="margin-top:1.25rem"><a class="phone-big" href="tel:+33749656885">+33 7 49 65 68 85</a></p>
         <div class="contact-lines">
-          <p>Email: <span class="tag-todo">email address to come</span></p>
+          <p>Email: <a class="mail-link" href="mailto:mubeneshacedric@gmail.com">mubeneshacedric@gmail.com</a></p>
           <p>83 avenue de la Bermone, 06270 Villeneuve-Loubet</p>
           <p>Monday to Saturday 7:30 am – 8 pm, Sunday 9 am – 5 pm</p>
         </div>
@@ -293,6 +293,7 @@
       <!-- Web3Forms form: replace ACCESS_KEY with the client key -->
       <form class="form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
         <input type="hidden" name="access_key" value="ACCESS_KEY_A_FOURNIR">
+        <input type="hidden" name="from_name" value="Site B.E.C Plomberie">
         <input type="hidden" name="subject" value="New request from the B.E.C Plomberie website (English page)">
         <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
         <div class="form-row">
@@ -370,6 +371,24 @@
     lb.addEventListener('click', function (e) { if (e.target === lb) lb.close(); });
   }
   var y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
+})();
+</script>
+<script>
+// Formulaire : envoi Web3Forms sans quitter la page
+(function () {
+  var form = document.getElementById('contact-form'), status = document.getElementById('form-status');
+  if (!form || !window.fetch) return;
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var key = form.querySelector('[name="access_key"]').value;
+    if (key.indexOf('ACCESS_KEY') === 0) { status.textContent = 'The form will be live very soon. In the meantime, please call +33 7 49 65 68 85.'; return; }
+    var btn = form.querySelector('button[type="submit"]'); btn.disabled = true; status.textContent = 'Sending…';
+    fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
+      .then(function (r) { return r.json(); })
+      .then(function (d) { if (d.success) { form.reset(); status.textContent = 'Thank you, your request has been sent. I will get back to you shortly.'; } else { throw 0; } })
+      .catch(function () { status.textContent = 'Sending failed. Please call +33 7 49 65 68 85.'; })
+      .then(function () { btn.disabled = false; });
+  });
 })();
 </script>
 </body>

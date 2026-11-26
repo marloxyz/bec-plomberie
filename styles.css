@@ -227,6 +227,7 @@ body::before {
 .contact-band .lead { color: #e6f4fc; }
 .phone-big { font-family: var(--font-display); font-weight: 800; font-size: clamp(2.2rem, 7vw, 3rem); color: #fff; text-decoration: none; font-variant-numeric: tabular-nums; }
 .contact-lines { display: grid; gap: .6rem; margin-top: 1rem; }
+.contact-lines .mail-link { color: #fff; overflow-wrap: anywhere; }
 .contact-lines .tag-todo { color: #ffe1c7; background: transparent; border-color: #ffb37a; }
 .form { display: grid; gap: 1rem; background: var(--surface); color: var(--ink); border-radius: var(--radius); padding: 1.5rem; }
 .form-row { display: grid; gap: 1rem; }
